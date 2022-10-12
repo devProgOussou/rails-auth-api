@@ -20,5 +20,6 @@ class SessionsController < ApplicationController
     end
     rescue => exception
       puts exception
+    end
   end
 end
