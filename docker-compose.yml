@@ -1,0 +1,14 @@
+version: "3.9"
+services:
+  dev-db:
+    image: postgres:latest
+    ports:
+    - 5434:5432
+    environment:
+      POSTGRES_PASSWORD: password
+      POSTGRES_USER: postgres
+      POSTGRES_DB: api_auth
+    networks:
+      - dev-network
+networks:
+  dev-network:
